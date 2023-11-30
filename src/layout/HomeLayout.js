@@ -164,7 +164,7 @@ export default function HomeLayout() {
                 <ul className="overflow-hidden">
                     <li className="float-left">
                         <Link to="/">
-                            <p className='m-4 text-4xl'>Gov3</p>
+                            <p className='m-4 text-4xl'>Cardano Crowdfunding</p>
                         </Link>
                     </li>
                     <div className="flex flex-row float-right">
@@ -176,13 +176,13 @@ export default function HomeLayout() {
                             </Link>
 
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/delegate">
                                 <p className="text-base text-black m-6">
                                     Delegate
                                 </p>
                             </Link>
-                        </li>
+                        </li> */}
 
                         {/* Connect Wallet */}
                         <div className='w-40 m-4 flex flex-row rounded-2xl h-10'>
@@ -257,7 +257,7 @@ function Footer() {
                     <img className='mt-5 w-6 h-6' src={pondLogo}/>
                 </a> */}
                 <p className='my-5 text-center text-white text-sm'>
-                    © 2022 Gov3 All rights reserved
+                    © 2022 Cardano Crowdfunding All rights reserved
                 </p>
             </div>
 
