@@ -1,0 +1,7 @@
+package-lock.json
+test/
+.env
+routes/.env
+node_modules/
+np_files/
+test.js

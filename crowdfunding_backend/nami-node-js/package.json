@@ -1,0 +1,16 @@
+{
+  "name": "nami-node-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nami.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emurgo/cardano-serialization-lib-nodejs": "^9.1.2",
+    "buffer": "^6.0.3",
+    "node-fetch": "^3.0.0"
+  }
+}

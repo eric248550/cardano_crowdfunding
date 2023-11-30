@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    font-family: 'Roboto Slab', sans-serif;
+    transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.button-effect {
+  /* margin: 38px; */
+  /* min-width: 300px;
+  min-height: 60px; */
+  font-family: "Nunito", sans-serif;
+  /* font-size: 22px; */
+  /* text-transform: uppercase; */
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4fd1c5;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 1) 0%,
+    rgba(79, 209, 197, 1) 100%
+  );
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.button-effect::before {
+  content: "";
+  border-radius: 1000px;
+  min-width: 100%;
+  min-height: 100%;
+  /* min-width: calc(400px + 12px);
+  min-height: calc(60px + 12px); */
+  border: 6px solid #00ffcb;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.button-effect:hover,
+.button-effect:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.button-effect:hover::before,
+.button-effect:focus::before {
+  opacity: 1;
+}
+
+.button-effect:hover::after,
+.button-effect:focus::after {
+  animation: none;
+  display: none;
+}
+
+/* .button-effect::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00ffcb;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+} */
+
+#address {
+  /* margin: 25px; */
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 0.803) 0%,
+    rgba(79, 209, 197, 0.393) 100%
+  );
+  border-radius: 1000px;
+  border: 2.5px solid rgba(79, 209, 197, 1);
+  color: white;
+  /* font-size: 2rem; */
+  box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.yellowButtonEffect:hover{
+  filter: brightness(300%)
+}
+
+
+@keyframes animate {
+  0%, 20%, 26%, 35% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  10%, 22%, 30%, 50%, 100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+  }
+}
